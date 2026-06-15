@@ -689,17 +689,14 @@ p{
 ==================================*/
 
 .contact{
-
     padding:7rem 0;
 }
 
 .contact-info{
-
     align-items:flex-start;
 }
 
 .contact-info p{
-
     margin-top:.8rem;
     margin-bottom:0;
 }
@@ -707,81 +704,58 @@ p{
 .contact-icon{
 
     font-size:1.8rem;
-
     margin-bottom:.5rem;
 }
 
 .phone{
-
     color:var(--color-secondary);
 }
 
 .mail{
-
     color:var(--color-accent);
 }
 
 .home{
-
     color:var(--color-blue);
 }
 
 .socials{
-
     display:flex;
     gap:1rem;
-
     margin-top:2rem;
 }
 
 .socials a{
-
     font-size:2.3rem;
-
     transition:.3s;
 }
 
 .socials a:hover{
-
     transform:translateY(-3px);
 }
 
 .form-control{
-
     background:transparent;
-
     border:1.5px solid var(--color-primary);
-
     border-radius:12px;
-
     padding:.9rem 1rem;
-
     font-family:var(--font-body);
-
     box-shadow:none;
 }
 
 .form-control:focus{
-
     border-color:var(--color-primary);
-
     box-shadow:none;
-
     background:transparent;
 }
 
 textarea.form-control{
-
     resize:none;
-
     min-height:170px;
 }
 
 .contact button{
-
     border-radius:999px;
-
     padding:.8rem 2rem;
-
     font-weight:600;
 }

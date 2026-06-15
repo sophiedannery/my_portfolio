@@ -1,0 +1,270 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio - Sophie Dannery
+{% endblock %}
+
+{% block body %}
+
+	<section class="hero">
+		<div class="container">
+
+
+			<div class="row align-items-center">
+
+				<div class="col-lg-8">
+
+					<h3>Bonjour, je suis Sophie</h3>
+
+					<h1>Développeuse web full stack junior</h1>
+
+					<p>
+						Après ma formation de développeuse web et web mobile, je construis des applications modernes avec une attention particulière portée au design, à l'expérience utilisateur et à la qualité du code. Je recherche aujourd'hui une première expérience professionnelle en développement web.
+					</p>
+
+					<div class="hero-buttons">
+
+						<a class="btn btn-primary" href="#">
+							Découvrir mes projets
+						</a>
+
+						<a class="btn btn-secondary" href="#">
+							Voir mon CV
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="col-lg-4">
+					<img src="{{ asset('/media/images/illu-C.PNG') }}" alt="Illustration développeuse" class="img-fluid hero-img" loading="lazy"></div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="timeline container">
+
+		<div class="timeline-card green">
+			Diplôme Développeur Web et Web Mobile - Bac +2
+		</div>
+
+		<div class="timeline-card purple">
+			Développement Front-end et Back-end
+		</div>
+
+		<div class="timeline-card blue">
+			Apprentissage continu et veille technologique
+		</div>
+
+	</section>
+
+
+	<section class="about container" id="about">
+
+		<div
+			class="row align-items-center">
+
+			<!-- Texte -->
+			<div class="col-lg-8">
+
+				<h2 class="section-title">
+					À propos de moi
+				</h2>
+
+				<p class="pt-4">
+					Après une
+					<strong>reconversion</strong>
+					dans le développement web, j'ai découvert une véritable passion pour la création d'interfaces et la résolution de problèmes. J'apprécie autant la conception d'expériences utilisateur intuitives que le développement de fonctionnalités côté serveur.
+				</p>
+
+				<p>
+					Aujourd'hui, je continue à développer mes compétences à travers des projets personnels et l'apprentissage de nouvelles technologies.
+					<br>
+					Je recherche une opportunité en tant que
+					<strong>développeuse web full stack junior</strong>
+					afin de contribuer à des projets concrets, évoluer au sein d'une équipe et poursuivre ma progression professionnelle.
+				</p>
+
+			</div>
+
+			<!-- Illustration -->
+			<div class="col-lg-4">
+
+				<div class="about-right">
+
+					<div class="about-circle">
+						<img src="{{ asset('media/images/illu-D.png') }}" alt="Portrait" class="about-img">
+					</div>
+
+					<a href="#contact" class="btn btn-secondary">
+						Me contacter
+					</a>
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="cta container">
+
+		<div class="cta-box">
+
+			<div class="row align-items-center">
+
+				<div class="col-lg-7">
+
+					<h2>
+						Prête à rejoindre votre équipe
+					</h2>
+
+					<p>
+						Je recherche un poste de développeuse web full stack junior afin de mettre en pratique mes compétences, continuer à apprendre et contribuer à des projets concrets au sein d'une équipe.
+					</p>
+
+					<a href="#" class="btn btn-light">
+						<i class="fa-solid fa-download me-2"></i>
+						Télécharger mon CV
+					</a>
+
+				</div>
+
+				<div class="col-lg-5 text-center">
+
+					<img src="{{ asset('media/images/illu-E.png') }}" alt="Illustration Sophie" class="cta-img img-fluid">
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section class="contact container" id="contact">
+
+		<h2 class="section-title mb-5">
+			Contact
+		</h2>
+
+		<!-- Coordonnées -->
+
+		<div class="row text-center contact-info mb-5">
+
+			<div class="col-md-4">
+
+				<i class="fa-solid fa-phone contact-icon phone"></i>
+
+				<p>+33 6 69 34 98 61</p>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<i class="fa-solid fa-envelope contact-icon mail"></i>
+
+				<p>dannery.sophie@gmail.com</p>
+
+			</div>
+
+			<div class="col-md-4">
+
+				<i class="fa-solid fa-house contact-icon home"></i>
+
+				<p>
+					Buis-les-Baronnies,<br>
+					Drôme Provençale
+				</p>
+
+			</div>
+
+		</div>
+
+		<!-- Bas -->
+
+		<div
+			class="row gy-5 align-items-start">
+
+			<!-- Texte -->
+
+			<div class="col-lg-5">
+
+				<h4>
+					Disponible pour rejoindre une équipe
+				</h4>
+
+				<p>
+					Je suis actuellement à la recherche d'un poste de développeuse web full stack junior, en présentiel ou à distance.
+				</p>
+
+				<p>
+					Si mon profil vous intéresse, n'hésitez pas à me contacter pour échanger.
+				</p>
+
+				<div class="socials">
+
+					<a href="#">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+
+					<a href="#">
+						<i class="fa-brands fa-github"></i>
+					</a>
+
+				</div>
+
+			</div>
+
+			<!-- Formulaire -->
+
+			<div class="col-lg-7">
+
+				<form>
+
+					<div class="row">
+
+						<div class="col-md-6 mb-3">
+
+							<input type="text" class="form-control" placeholder="Nom">
+
+						</div>
+
+						<div class="col-md-6 mb-3">
+
+							<input type="text" class="form-control" placeholder="Prénom">
+
+						</div>
+
+					</div>
+
+					<div class="mb-3">
+
+						<input type="email" class="form-control" placeholder="E-mail">
+
+					</div>
+
+					<div class="mb-3">
+
+						<textarea class="form-control" rows="6" placeholder="Message"></textarea>
+
+					</div>
+
+					<button class="btn btn-secondary">
+						Me contacter
+					</button>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+{% endblock %}

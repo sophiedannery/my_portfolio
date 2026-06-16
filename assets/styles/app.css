@@ -798,9 +798,16 @@ textarea.form-control{
 }
 
 .footer-socials a{
-    color:var(--color-primary);
     font-size:1.3rem;
     transition:.25s;
+}
+
+.socials-linkedin{
+    color:var(--color-accent);
+}
+
+.socials-github{
+    color:var(--color-blue);
 }
 
 .footer-socials a:hover{

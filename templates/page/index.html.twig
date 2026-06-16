@@ -195,12 +195,10 @@
 				</p>
 
 				<div class="socials">
-
-					<a href="#">
+					<a href="#" class="socials-linkedin">
 						<i class="fa-brands fa-linkedin"></i>
 					</a>
-
-					<a href="#">
+					<a href="#" class="socials-github">
 						<i class="fa-brands fa-github"></i>
 					</a>
 
@@ -211,27 +209,35 @@
 			<!-- Formulaire -->
 			<div class="col-lg-7">
 
-				<form>
+				{% for message in app.flashes('success') %}
+					<div class="alert alert-success">
+						{{ message }}
+					</div>
+				{% endfor %}
+
+
+				<form method="post" action="{{ path('contact_send') }}">
+
 					<div class="row">
 
 						<div class="col-md-6 mb-3">
-							<input type="text" class="form-control" placeholder="Nom">
+							<input type="text" class="form-control" placeholder="Nom" name="nom" required>
 						</div>
 
 						<div class="col-md-6 mb-3">
-							<input type="text" class="form-control" placeholder="Prénom">
+							<input type="text" class="form-control" placeholder="Prénom" name="prenom" required>
 						</div>
 					</div>
 
 					<div class="mb-3">
-						<input type="email" class="form-control" placeholder="E-mail">
+						<input type="email" class="form-control" placeholder="E-mail" name="email" required>
 					</div>
 
 					<div class="mb-3">
-						<textarea class="form-control" rows="6" placeholder="Message"></textarea>
+						<textarea class="form-control" rows="6" placeholder="Message" name="message" required></textarea>
 					</div>
 
-					<button class="btn btn-secondary">
+					<button type="submit" class="btn btn-secondary">
 						Me contacter
 					</button>
 

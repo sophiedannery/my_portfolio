@@ -5,79 +5,124 @@
 
 {% block body %}
 
+
 	<section class="hero">
 		<div class="container">
-
-
 			<div class="row align-items-center">
-
 				<div class="col-lg-8">
-
 					<h3>Bonjour, je suis Sophie</h3>
-
 					<h1>Développeuse web full stack junior</h1>
-
 					<p>
 						Après ma formation de développeuse web et web mobile, je construis des applications modernes avec une attention particulière portée au design, à l'expérience utilisateur et à la qualité du code. Je recherche aujourd'hui une première expérience professionnelle en développement web.
 					</p>
-
 					<div class="hero-buttons">
-
-						<a class="btn btn-primary" href="#">
+						<a class="btn btn-primary" href="#projets">
 							Découvrir mes projets
 						</a>
-
 						<a class="btn btn-secondary" href="#">
 							Voir mon CV
 						</a>
-
 					</div>
-
 				</div>
-
 				<div class="col-lg-4">
 					<img src="{{ asset('/media/images/illu-C.PNG') }}" alt="Illustration développeuse" class="img-fluid hero-img" loading="lazy"></div>
-
-
 			</div>
 		</div>
 	</section>
 
-	<section class="timeline container">
 
+	<section class="timeline container">
 		<div class="timeline-card green">
 			Diplôme Développeur Web et Web Mobile - Bac +2
 		</div>
-
 		<div class="timeline-card purple">
 			Développement Front-end et Back-end
 		</div>
-
 		<div class="timeline-card blue">
 			Apprentissage continu et veille technologique
+		</div>
+	</section>
+
+
+	<section class="skills container" id="competences">
+
+		<div class="row align-items-center g-5">
+
+			<div class="col-lg-6">
+
+				<h2 class="section-title">
+					Mes compétences
+				</h2>
+
+				<div class="skills-list">
+
+					<div class="skill-row">
+						<span class="skill-category frontend">front-end</span>
+						<p>HTML · CSS · JavaScript</p>
+					</div>
+
+					<div class="skill-row">
+						<span class="skill-category backend">back-end</span>
+						<p>PHP · Symfony</p>
+					</div>
+
+					<div class="skill-row">
+						<span class="skill-category database">bases de données</span>
+						<p>MySQL · MongoDB</p>
+					</div>
+
+					<div class="skill-row">
+						<span class="skill-category tools">outils</span>
+						<p>Git · Docker</p>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="col-lg-6">
+
+				<div class="learning-box">
+
+					<h3>Toujours en apprentissage</h3>
+
+					<p>
+						J'aime découvrir de nouvelles technologies et approfondir mes connaissances pour créer des applications toujours plus performantes.
+					</p>
+
+					<p class="mb-2">
+						<strong>Actuellement :</strong>
+					</p>
+
+					<ul>
+						<li>JavaScript</li>
+						<li>Docker</li>
+						<li>GitHub Actions</li>
+					</ul>
+
+				</div>
+
+			</div>
+
 		</div>
 
 	</section>
 
 
 	<section class="about container" id="about">
-
 		<div
 			class="row align-items-center">
-
 			<!-- Texte -->
 			<div class="col-lg-8">
-
 				<h2 class="section-title">
 					À propos de moi
 				</h2>
-
 				<p class="pt-4">
 					Après une
 					<strong>reconversion</strong>
 					dans le développement web, j'ai découvert une véritable passion pour la création d'interfaces et la résolution de problèmes. J'apprécie autant la conception d'expériences utilisateur intuitives que le développement de fonctionnalités côté serveur.
 				</p>
-
 				<p>
 					Aujourd'hui, je continue à développer mes compétences à travers des projets personnels et l'apprentissage de nouvelles technologies.
 					<br>
@@ -85,28 +130,133 @@
 					<strong>développeuse web full stack junior</strong>
 					afin de contribuer à des projets concrets, évoluer au sein d'une équipe et poursuivre ma progression professionnelle.
 				</p>
-
 			</div>
-
 			<!-- Illustration -->
 			<div class="col-lg-4">
-
 				<div class="about-right">
-
 					<div class="about-circle">
 						<img src="{{ asset('media/images/illu-D.png') }}" alt="Portrait" class="about-img">
 					</div>
-
 					<a href="#contact" class="btn btn-secondary">
 						Me contacter
 					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
+
+	<section class="projects container" id="projets">
+
+		<h2 class="section-title">Mes projets</h2>
+
+		{# NAMASTE #}
+		<article class="project-item">
+
+			<div class="project-image">
+				<img src="{{ asset('media/images/namaste.jpg') }}" alt="Aperçu du site Namaste Yoga Studio">
+			</div>
+
+			<div class="project-content">
+
+				<span class="project-type">projet de formation</span>
+
+				<h3>Namaste Yoga Studio</h3>
+
+				<p>
+					Application web de gestion de cours de yoga permettant aux élèves de réserver des séances, aux professeurs de gérer leur planning et à l'administrateur de piloter l'ensemble de la plateforme.
+				</p>
+
+				<div class="project-tags">
+					<span class="tag-front">HTML</span>
+					<span class="tag-front">JavaScript</span>
+					<span class="tag-back">Symfony</span>
+					<span class="tag-bdd">MySQL</span>
+					<span class="tag-bdd">MongoDB</span>
 				</div>
 
+				<div class="project-links">
+					<a href="https://www.namaste-yoga-studio.fr/" target="_blank" rel="noopener noreferrer">namaste-yoga-studio.fr</a>
+					<a href="https://github.com/sophiedannery/namaste-yoga-studio" target="_blank" rel="noopener noreferrer">GitHub</a>
+				</div>
 
 			</div>
 
-		</div>
+		</article>
+
+
+		{# ECORIDE #}
+		<article class="project-item project-item-reverse">
+
+			<div class="project-image">
+				<img src="{{ asset('media/images/ecoride.jpg') }}" alt="Aperçu du site EcoRide">
+			</div>
+
+			<div class="project-content">
+
+				<span class="project-type">projet de formation</span>
+
+				<h3>EcoRide</h3>
+
+				<p>
+					Application web de covoiturage facilitant la mise en relation des conducteurs et des passagers pour organiser et réserver des trajets.
+				</p>
+
+				<div class="project-tags">
+					<span class="tag-front">HTML</span>
+					<span class="tag-front">JavaScript</span>
+					<span class="tag-back">Symfony</span>
+					<span class="tag-bdd">MySQL</span>
+					<span class="tag-bdd">MongoDB</span>
+				</div>
+
+
+				<div class="project-links">
+					<a href="https://www.ecoride-app.fr/" target="_blank" rel="noopener noreferrer">ecoride-app.fr</a>
+					<a href="https://github.com/sophiedannery/EcoRide_A" target="_blank" rel="noopener noreferrer">GitHub</a>
+				</div>
+
+			</div>
+
+		</article>
+
+
+		{# OH PETARD #}
+		<article class="project-item">
+
+			<div class="project-image">
+				<img src="{{ asset('media/images/ohpetard.jpg') }}" alt="Aperçu du site Oh Pétard Festival">
+			</div>
+
+			<div class="project-content">
+
+				<span class="project-type">projet associatif</span>
+
+				<h3>Oh Pétard Festival</h3>
+
+				<p>
+					Développement d'un site vitrine pour le festival Oh Pétard avec Symfony. Conception d'une interface responsive et gestion des contenus.
+					<br>À venir : galerie photos et gestion des inscriptions.
+
+				</p>
+
+				<div class="project-tags">
+					<span class="tag-front">HTML</span>
+					<span class="tag-back">Symfony</span>
+
+				</div>
+
+				<div class="project-links">
+					<a href="https://www.ohpetardfestival.com/" target="_blank" rel="noopener noreferrer">ohpetardfestival.fr</a>
+
+					<a href="https://github.com/sophiedannery/ohpetardfestival_26" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+
+				</div>
+
+			</div>
+
+		</article>
 
 	</section>
 
@@ -114,11 +264,8 @@
 	<!-- CTA -->
 
 	<section class="cta container">
-
 		<div class="cta-box">
-
 			<div class="row align-items-center">
-
 				<div class="col-lg-7">
 					<h2>
 						Prête à rejoindre votre équipe
@@ -130,19 +277,12 @@
 						<i class="fa-solid fa-download me-2"></i>
 						Télécharger mon CV
 					</a>
-
 				</div>
-
 				<div class="col-lg-5 text-center">
-
 					<img src="{{ asset('media/images/illu-E.png') }}" alt="Illustration Sophie" class="cta-img img-fluid">
-
 				</div>
-
 			</div>
-
 		</div>
-
 	</section>
 
 
@@ -195,10 +335,14 @@
 				</p>
 
 				<div class="socials">
-					<a href="#" class="socials-linkedin">
+					<a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="socials-linkedin">
+
+
 						<i class="fa-brands fa-linkedin"></i>
 					</a>
-					<a href="#" class="socials-github">
+					<a href="https://github.com/sophiedannery" target="_blank" rel="noopener noreferrer" class="socials-github">
+
+
 						<i class="fa-brands fa-github"></i>
 					</a>
 

@@ -19,8 +19,8 @@
 						<a class="btn btn-primary" href="#projets">
 							Découvrir mes projets
 						</a>
-						<a class="btn btn-secondary" href="#">
-							Voir mon CV
+						<a class="btn btn-secondary" href="{{ asset('docs/CV_Dannery_Sophie.pdf') }}" download>
+							Télécharger mon CV
 						</a>
 					</div>
 				</div>
@@ -112,7 +112,8 @@
 
 	<section class="about container" id="about">
 		<div
-			class="row align-items-center">
+			class="row align-items-center"
+		>
 			<!-- Texte -->
 			<div class="col-lg-8">
 				<h2 class="section-title">
@@ -273,7 +274,7 @@
 					<p>
 						Je recherche un poste de développeuse web full stack junior afin de mettre en pratique mes compétences, continuer à apprendre et contribuer à des projets concrets au sein d'une équipe.
 					</p>
-					<a href="#" class="btn btn-light">
+					<a href="{{ asset('docs/CV_Dannery_Sophie.pdf') }}" download class="btn btn-light">
 						<i class="fa-solid fa-download me-2"></i>
 						Télécharger mon CV
 					</a>
@@ -319,7 +320,8 @@
 
 		<!-- Bas -->
 		<div
-			class="row gy-5 align-items-start">
+			class="row gy-5 align-items-start"
+		>
 
 			<!-- Texte -->
 			<div class="col-lg-5">
